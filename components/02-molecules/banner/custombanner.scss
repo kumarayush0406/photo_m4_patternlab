@@ -1,0 +1,116 @@
+@import '../../00-base/01-colors/colors-vars';
+@import '../../00-base/00-defaults/03-mixins';
+@import '../../00-base/00-defaults/02-breakpoints';
+@import '../../00-base/00-defaults/01-variables';
+
+.banner {
+  background-image: url('/images/banner.jpg');
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  top: -135px;
+  left: 0;
+  z-index: -1;
+
+  &__overlay {
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+  }
+
+  &__text {
+    font-family: $font-primary;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    color: $color-default;
+    z-index: 2;
+    padding: 0 15px;
+    padding-top: 225px !important;
+
+    @include sm-min-breakpoint {
+      max-width: 75%;
+      margin: auto;
+    }
+
+    @include sm-min-breakpoint {
+      max-width: 83.333%;
+      margin: auto;
+    }
+
+    h3 {
+      @include font-5();
+      margin-bottom: 1.4rem;
+      color: #ffff;
+      letter-spacing: 6px;
+      width: fit-content;
+      position: relative;
+      margin: auto;
+
+      &::before,
+      &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        margin: auto;
+        bottom: 0;
+        width: 40px;
+        height: 1px;
+        background: currentColor;
+      }
+
+      &:before {
+        left: -60px;
+      }
+
+      &::after {
+        right: -60px;
+      }
+    }
+
+    h1 {
+      @include font-1();
+      line-height: 1.3;
+      font-weight: 500;
+      color: #ffff;
+
+      @include md-breakpoint {
+        font-size: 2.4rem;
+      }
+
+      // @include sm-min-breakpoint {
+      //     font-size: calc(2.19rem + (4.4 - 2.19) * ((100vw - 20rem) / (48 - 20)));
+      //     line-height: calc(1.4 * (2.19rem + (4.4 - 2.19) * ((100vw - 20rem) / (48 - 20))));
+      // }
+    }
+
+    p {
+      font-family: $font-primary;
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    &__cta {
+      a {
+        color: $color-default;
+      }
+    }
+  }
+}
+
+.active {
+  background-color: #000;
+  transition: 0.5s ease-in-out;
+}

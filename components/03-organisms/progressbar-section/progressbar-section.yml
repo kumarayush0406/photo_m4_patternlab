@@ -1,0 +1,16 @@
+progress_items:
+  - cardsprogresprogress_content: '84'
+    cardsprogresscard_heading: 'Photography'
+    cardsprogresscard_paragraph_content: 'Lorem ipsum dolor sit amet, consectetur adipisicing.'
+
+  - cardsprogresprogress_content: '73'
+    cardsprogresscard_heading: 'Design'
+    cardsprogresscard_paragraph_content: 'Lorem ipsum dolor sit amet, consectetur adipisicing.'
+
+  - cardsprogresprogress_content: '24'
+    cardsprogresscard_heading: 'Decoration'
+    cardsprogresscard_paragraph_content: 'Lorem ipsum dolor sit amet, consectetur adipisicing.'
+
+  - cardsprogresprogress_content: '84'
+    cardsprogresscard_heading: 'Coverage'
+    cardsprogresscard_paragraph_content: 'Lorem ipsum dolor sit amet, consectetur adipisicing.'

@@ -1,0 +1,79 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: clr(background);
+  color: clr(text);
+
+  @include body-copy;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.main {
+  @include wrapper;
+
+  display: block;
+  /* Fix for IE weirdness */
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.align-centre {
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  // X-Large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @media (min-width: 1400px) {
+    .container {
+      max-width: 1360px;
+    }
+  }
+}

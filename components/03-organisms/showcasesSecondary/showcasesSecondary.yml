@@ -1,0 +1,12 @@
+showcase_box_heading: 'Occasions'
+showcase_box_sub_heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+
+showcase_box_sm_heading: 'Coverage'
+showcase_box_sm_sub_heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+
+showcase2_box_sm_heading: 'Occasions'
+showcase2_box_sm_sub_heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
+showcaseimg_modifiers:
+  - 'chnge-2'
+showcasebox_modifiers:
+  - 'sky'

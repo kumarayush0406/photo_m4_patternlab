@@ -1,0 +1,8 @@
+{% set logo_base_class = 'nav__branding' %}
+
+<div {{ bem(logo_base_class) }}>
+  {% include '@atoms/links/link/link.twig' with {
+    link_url: logo_url,
+    link_content: logo_content
+  } %}
+</div>

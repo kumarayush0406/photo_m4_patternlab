@@ -1,0 +1,24 @@
+<section class="plans">
+ <div class="container">
+{% include "@molecules/plan-title/plan-title.twig" with {
+}%}   
+   <div class="plans__cards">    
+    {% for item in plans_items %}
+      {% include "@molecules/plan-card/plan-card.twig" with {
+    card_heading: item.plancard_heading,
+    card_sub_heading:item.plancard_sub_heading, 
+    spanprice_content:item.planspanprice_content, 
+    spanfig_content:item.planspanfig_content,
+    spantag_content: item.planspantag_content,
+    planone_paragraph_content:item.plans_planone_paragraph_content,
+    plantwo_paragraph_content: item.plans_plantwo_paragraph_content,
+    planthree_paragraph_content:item.plans_planthree_paragraph_content, 
+    planfour_paragraph_content: item.plans_planfour_paragraph_content,
+    planfive_paragraph_content: item.plans_planfive_paragraph_content,
+    plansix_paragraph_content:  item.plans_plansix_paragraph_content,
+    plan_modifiers: item.cardplan_modifiers,
+     } %}
+    {% endfor %}
+   </div>
+   </div>
+   </section>

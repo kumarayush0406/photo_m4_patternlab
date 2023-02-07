@@ -1,0 +1,3 @@
+.btn{display:block;display:inline-block;font-size:1rem;line-height:1.2;padding:.4rem 1.5rem;display:inline-flex;align-items:center;padding:.6rem 1.5rem;border-radius:3px;color:#fff;border:1px solid #fff}.btn:hover{color:#333;background-color:#fff;border-color:#fff}.btn--about{display:block;display:inline-block;font-size:1rem;line-height:1.2;border:1px solid #000;color:#000}.btn--about:hover{color:#fff;background-color:#000;border-color:#fff}.btn--sm{padding:.6rem 1.5rem;border-radius:3px;font-weight:500;letter-spacing:1px;transition:all .3s ease-in-out;margin:.4rem .8rem}.btn--md{padding:1rem 2.6rem;border-radius:6px;font-weight:500;letter-spacing:1px;margin:.4rem .8rem !important;transition:all .3s ease-in-out}
+
+/*# sourceMappingURL=cta-with-link.css.map*/

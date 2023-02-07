@@ -1,0 +1,141 @@
+@import '../../00-base/01-colors/colors-vars';
+@import '../../00-base/00-defaults/03-mixins';
+@import '../../00-base/00-defaults/02-breakpoints';
+@import '../../00-base/00-defaults/01-variables';
+
+.progress-bar {
+  padding-top: 90px;
+  padding-bottom: 45px;
+
+  &__title {
+    h2 {
+      @include font-2;
+      width: fit-content;
+      position: relative;
+      margin: auto;
+      margin-bottom: 1.4rem;
+      letter-spacing: 4px;
+      text-align: center;
+      font-weight: 300;
+
+      &::before {
+        position: absolute;
+        content: '';
+        left: -60px;
+        top: 0;
+        margin: auto;
+        bottom: 0;
+        width: 40px;
+        height: 1px;
+        background: currentColor;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        right: -60px;
+        top: 0;
+        margin: auto;
+        bottom: 0;
+        width: 40px;
+        height: 1px;
+        background: currentColor;
+      }
+    }
+
+    h3 {
+      @include font-4;
+      text-align: center;
+      font-weight: 300;
+      color: $color-footer;
+    }
+  }
+
+  &__content {
+    display: flex;
+    padding-top: 3rem;
+    margin-top: 0.5rem;
+
+    @include md-breakpoint {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__card {
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    @include md-breakpoint {
+      width: 100%;
+    }
+
+    h4 {
+      padding-top: 1rem;
+      @include font-5;
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      @include font-7;
+      padding-top: 0.5rem;
+    }
+  }
+}
+
+/*Required CSS*/
+svg.radial-progress {
+  height: auto;
+  max-width: 240px;
+  padding: 0;
+  transform: rotate(-90deg);
+  width: 100%;
+  background-image: linear-gradient(
+    -225deg,
+    #ff057c 0%,
+    #8d0b93 50%,
+    #321575 100%
+  );
+  border-radius: 50%;
+}
+
+section.svg-container svg.radial-progress:nth-child(even) {
+  margin: 0 15px;
+}
+
+svg.radial-progress circle {
+  fill: transparent;
+  stroke: #fff;
+}
+
+svg.radial-progress circle.bar-static {
+  stroke: #fafafa !important;
+}
+
+svg.radial-progress circle.bar--animated {
+  stroke-dasharray: 219.91148575129;
+  stroke: #ffffff;
+  stroke-dashoffset: 219.91148575129;
+  stroke-width: 4px;
+  stroke-linecap: round;
+}
+
+svg.radial-progress text {
+  fill: #fafafa;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  text-anchor: middle;
+  text-shadow: 0 0 5px #0000007a;
+}
+
+section.svg-container {
+  width: 52%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 80vh;
+}

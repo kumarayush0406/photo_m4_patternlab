@@ -1,0 +1,9 @@
+showcase_box_heading: 'Coverage'
+showcase_box_sub_heading: 'Aliquam tortor purus, suscipit a accumsan quis, bland'
+showcase_sub_heading:
+showcase_heading: 'Photography'
+showcase_paragraph_content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor purus, suscipit a accumsan quis, blandit a dolor. Morbi quis purus at ipsum tristique varius sit amet id odio. Ut tincidunt ligula ut tortor aliquet dignissim. Proin fermentum felis eget urna lobortis.'
+tertiaryshowcasebox_modifiers:
+  - 'orange'
+showcaseimg_modifiers:
+  - 'chnge'

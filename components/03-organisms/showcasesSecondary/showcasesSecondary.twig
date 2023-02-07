@@ -1,0 +1,30 @@
+     <section class="showcase">
+            <div class="container-fluid">
+                <section class="showcase__secondary">
+                <div class="showcase__primary__box-content--lg">
+      {% include "@molecules/showcase/showcase-box-sm/showcase-box-sm.twig" with {
+                 heading_level:4 ,
+                 heading :showcase_box_sm_heading ,
+                  heading_level:3,
+                 heading :showcase_box_sm_sub_heading ,
+       } %}
+                </div>
+
+             {% include "@molecules/showcase/showcase-box-expand/showcase-box-expand.twig" with {
+               heading_level:4 ,
+               heading :showcase_box_heading ,
+               heading_level:3 ,
+               heading :showcase_box_sub_heading ,
+             }%}
+
+<div class="showcase__primary__box-content--lg orange">
+      {% include "@molecules/showcase/showcase-box-sm/showcase-box-sm.twig" with {
+                 heading_level:4 ,
+                 heading :showcase2_box_sm_heading ,
+                 heading_level:3,
+                 heading :showcase2_box_sm_sub_heading ,
+     } %}
+</div>
+                </section>
+            </div>
+     </section>

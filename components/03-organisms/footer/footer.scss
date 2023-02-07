@@ -1,0 +1,62 @@
+@import '../../00-base/01-colors/colors-vars';
+@import '../../00-base/00-defaults/03-mixins';
+@import '../../00-base/00-defaults/02-breakpoints';
+@import '../../00-base/00-defaults/01-variables';
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 45px;
+  background: $color-footer;
+
+  &__wrapper {
+    display: flex;
+    width: 100%;
+
+    @include md-breakpoint {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__content {
+    width: 25%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @include md-breakpoint {
+      width: 100%;
+      text-align: center;
+    }
+
+    h2 {
+      @include font-2;
+      color: $color-default;
+      margin-bottom: 0.25rem !important;
+      font-weight: 300;
+    }
+
+    p {
+      color: #cccccc;
+      @include font-4;
+      margin-top: 0.5rem !important;
+      font-weight: 300;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      @include font-5;
+      margin-bottom: 1.5rem !important;
+      color: $color-default;
+    }
+
+    ul {
+      margin-bottom: 2.3125rem;
+      padding-left: 0;
+
+      li {
+        @include font-4;
+        padding-bottom: 0.5rem;
+        color: #cccccc;
+      }
+    }
+  }
+}

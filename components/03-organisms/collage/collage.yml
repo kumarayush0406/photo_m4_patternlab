@@ -1,0 +1,20 @@
+items:
+  - image_src: 'https://mobirise.com/extensions/photom4/assets/images/background2.jpg'
+    heading_level: '4'
+    collage_heading: 'LANDSCAPE'
+
+  - image_src: 'https://mobirise.com/extensions/photom4/assets/images/background3.jpg'
+    heading_level: '4'
+    collage_heading: 'ARTWORK'
+
+  - image_src: 'https://mobirise.com/extensions/photom4/assets/images/background4.jpg'
+    heading_level: '4'
+    collage_heading: 'NATURE'
+
+  - image_src: 'https://mobirise.com/extensions/photom4/assets/images/background5.jpg'
+    heading_level: '4'
+    collage_heading: 'ARTWORK'
+
+  - image_src: 'https://mobirise.com/extensions/photom4/assets/images/background1.jpg'
+    heading_level: '4'
+    collage_heading: 'MOUNTAIN'

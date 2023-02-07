@@ -1,0 +1,48 @@
+<footer class="footer">
+	<div class="container">
+		<div class="footer__wrapper">
+			<div class="footer__content">
+				{% include '@atoms/text/headings/_heading.twig' with {
+                 heading_level:2 ,
+                 heading :footer_heading ,
+                 }%}
+				{% include '@atoms/text/text/01-paragraph.twig' with {
+                 paragraph_content: footer_paragraph_content,
+                 } %}
+			</div>
+			<div class="footer__content">
+				{% include '@atoms/text/headings/_heading.twig' with {
+                 heading_level:3 ,
+                 heading :footer_content_heading ,
+                 }%}
+				<ul>
+					<li>Home</li>
+					<li>Portfolio</li>
+					<li>Events</li>
+				</ul>
+			</div>
+			<div class="footer__content">
+				{% include '@atoms/text/headings/_heading.twig' with {
+                 heading_level:3 ,
+                 heading :footerabout_heading ,
+                 }%}
+				<ul>
+					<li>About Us</li>
+					<li>Services</li>
+					<li>Features</li>
+				</ul>
+			</div>
+			<div class="footer__content">
+				{% include '@atoms/text/headings/_heading.twig' with {
+                 heading_level:3 ,
+                 heading :footercontact_heading ,
+                 }%}
+				<ul>
+					<li>Phone: +453 7542 356 34</li>
+					<li>Email: support@mobirise.com</li>
+					<li>Address: Street Name, AA 9999</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>

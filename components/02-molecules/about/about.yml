@@ -1,0 +1,17 @@
+about_heading: 'About Courses'
+about_sub_heading: 'Aenean vel urna vitae massa consequat blandit.'
+about_paragraph_content:
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget lectus eu ex ornare
+  porta
+  euismod a libero. Phasellus vehicula placerat enim at egestas. Aliquam suscipit felis in
+  massa hendrerit tristique. In augue diam, pellentesque nec pulvinar in, sagittis ac
+  nulla.
+  Sed eu lectus vitae justo vehicula viverra. Aenean vel urna vitae massa consequat
+  blandit.
+  Quisque sodales sapien vitae malesuada ultricies. Curabitur pretium ipsum non nunc
+  facilisis
+  semper.'
+aboutimage_src: 'https://mobirise.com/extensions/photom4/assets/images/02.jpg'
+aboutimage_alt: 'A 16 by 9 image'
+about_btn_content: 'View More'
+about_btn_link_base_class: 'btn--about btn-md'

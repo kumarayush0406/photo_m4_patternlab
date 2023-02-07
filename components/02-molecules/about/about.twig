@@ -1,0 +1,41 @@
+  <section class="about">
+            <div class="container-fluid">
+                <div class="about__wrapper">
+                    <div class="about__img-block">
+                        {# <img src="./assets/photo/4.jpg" alt="img"> #}
+                        {% include '@atoms/images/image/_image.twig' with {
+                             image_src:aboutimage_src, 
+                              image_alt:aboutimage_alt,                                
+                             }%}
+                    </div>
+                    <div class="about__text-block">
+                        <div class="about__media-content">
+                         {% include '@atoms/text/headings/_heading.twig' with {
+                 heading_level:1 ,
+                 heading :about_heading ,
+                 }%}
+				{% include '@atoms/text/headings/_heading.twig' with {
+                 heading_level:3 ,
+                 heading :about_sub_heading ,
+                 }%}
+				{% include '@atoms/text/text/01-paragraph.twig' with {
+                 paragraph_content: about_paragraph_content,
+                 } %}  
+                 
+                            <div class="about__cta">
+                 {% include '@atoms/links/link/cta-with-link/cta-with-link.twig' with {
+                       btn_content:about_btn_content,
+                       btn_link_base_class:about_btn_link_base_class,
+                       btn_link_modifiers:about_btn_link_modifiers,
+                       btn_link_blockname:about_btn_link_blockname,
+                       btn_link__extra_classes: 'test',
+                                } %} 
+                                {# <a href="#" class="btn--about btn-md">View More</a> #}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+				

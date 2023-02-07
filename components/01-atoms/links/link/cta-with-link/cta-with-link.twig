@@ -1,0 +1,11 @@
+{% set btn_base_class = btn_base_class|default('btn') %}
+{% set btn_link_base_class = btn_link_base_class|default('btn') %}
+
+{% include "@atoms/links/link/link.twig" with {
+     "link_content": btn_content,
+      "link_url": btn_url,
+      "link_base_class": btn_link_base_class,
+      "link_modifiers": btn_link_modifiers,
+      "link_blockname": btn_link_blockname,
+      link__extra_classes: btn_link__extra_classes,
+    } %}

@@ -1,0 +1,43 @@
+<header>
+	<nav class="nav">
+		<div class="nav__icon-wrapper">
+			<span>
+				<a href="#">
+					<i class="fa-brands fa-facebook-f"></i>
+				</a>
+			</span>
+			<span>
+				<a href="#">
+					<i class="fab fa-vk"></i>
+				</a>
+			</span>
+			<span>
+				<a href="#">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+			</span>
+			<span>
+				<a href="#">
+					<i class="fa-brands fa-twitter"></i>
+				</a>
+			</span>
+		</div>
+		<div class="nav__menu-wrapper">
+			<a href="#" class="hamburger-wrapper">
+				<div class="hamburger-menu"></div>
+			</a>
+			{% include "@atoms/logo/logo.twig" with {
+				} %}
+			<div class="nav__collapse  mobile-menu-overlay">
+				{% include "@molecules/menus/main-menu/main-menu.twig" with {
+				 menu_class: "dropdown",
+                 items: menu_items,
+			    } %}
+				{% include "@atoms/links/link/cta-with-link/cta-with-link.twig" with {
+                    btn_content:nav__btn_content,
+					btn_link_modifiers:nav__btn_link_modifiers,
+                    } %}
+			</div>
+		</div>
+	</nav>
+</header>

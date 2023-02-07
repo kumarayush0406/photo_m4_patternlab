@@ -1,0 +1,10 @@
+banner_heading: 'PROFESSIONAL'
+banner_heading_secondary: 'Photographer Courses'
+banner__paragraph_content:
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu dui non diam eleifend egestas id a
+  ligula. Proin interdum vehicula neque sit amet scelerisque. Nulla imperdiet mollis libero, in
+  efficitur ligula. Sed malesuada diam ac nibh ultricies condimentum. Ut finibus tortor odio, vitae
+  feugiat purus faucibus ac.'
+banner__btn_content: 'view more'
+banner__btn_link_modifiers:
+  - 'md'

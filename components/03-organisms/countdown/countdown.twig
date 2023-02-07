@@ -1,0 +1,28 @@
+<section class="countdown-box">
+	<div class="container">
+		<div class="countdown-box__wrapper">
+			<div class="countdown-box__text">
+				{% include '@atoms/text/headings/_heading.twig' with {
+                      heading_level:2 ,
+                      heading :countdown_heading ,
+                 }%}
+			</div>
+			<div class="countdown-box__content">
+				<div class="countdown-box__container">
+					<div id="countdown__container">
+						<ul>
+							<li>
+								<span id="days"></span>days</li>
+							<li>
+								<span id="hours"></span>Hours</li>
+							<li>
+								<span id="minutes"></span>Minutes</li>
+							<li>
+								<span id="seconds"></span>Seconds</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

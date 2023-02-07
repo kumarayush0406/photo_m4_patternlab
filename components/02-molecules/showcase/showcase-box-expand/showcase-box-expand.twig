@@ -1,0 +1,23 @@
+{% set showcasebox_base_class = showcasebox_base_class|default('showcase__primary__box-content') %}
+{% set showcaseimg_base_class = showcaseimg_base_class|default('showcase__primary__overlay-img-content') %}
+<div {{bem( 'showcase__primary__img' )}}>
+				<div class="showcase__primary__overlay-wrapper">
+					<div class="showcase__primary__overlay"></div>
+					<div {{bem(showcaseimg_base_class, showcaseimg_modifiers, showcaseimg_blockname)}}></div>
+				</div>
+				{# <div class="showcase__primary__box-content"> #}
+				<div {{bem(showcasebox_base_class, showcasebox_modifiers, showcasebox_blockname)}}>
+					<div class="showcase__primary__box-title">
+                    {% include '@atoms/text/headings/_heading.twig' with {
+                 heading_level:4 ,
+                 heading :showcase_box_heading ,
+                 }%}
+
+				{% include '@atoms/text/headings/_heading.twig' with {
+                 heading_level:3 ,
+                 heading :showcase_box_sub_heading ,
+                 }%}
+					</div>
+				</div>
+</div>
+

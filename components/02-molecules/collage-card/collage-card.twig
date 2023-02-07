@@ -1,0 +1,15 @@
+			<div class="collage__img">
+				{% include '@atoms/images/image/_image.twig' with {
+                    image_src: image_src,
+					    } %}
+				{# <img src="https://mobirise.com/extensions/photom4/assets/images/background2.jpg" alt=""> #}
+				<figcaption class="collage__figure-caption">
+					<div class="collage__figure-caption__wrap">
+						{% include '@atoms/text/headings/_heading.twig' with {
+                         heading_level:4 ,
+                         heading: collagecard_heading,
+					    } %}
+					</div>
+				</figcaption>
+			</div>
+

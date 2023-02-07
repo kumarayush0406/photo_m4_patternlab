@@ -1,0 +1,20 @@
+<section class="progress-bar">
+	<div class="container">
+		<div class="progress-bar__title">
+			<h2>Our Skills</h2>
+			<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla metus metus, ornare sit amet
+												                        dictum in, fringilla eget eros. Nunc in neque ex. Curabitur tempor turpis ligula, sed suscipit
+												                        ex pretium nec. Nullam posuere diam arcu. Cras congue posuere ligula, ut placerat mi elementum
+												                        sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+		</div>
+        <div class="progress-bar__content">
+		{% for item in progress_items %}
+			{% include "@molecules\progressbar-card\progressbar-card.twig" with {
+                   progresprogress_content: item.cardsprogresprogress_content,
+                    heading_level:4 ,
+                   progresscard_heading: item.cardsprogresscard_heading,
+                   progresscard_paragraph_content: item.cardsprogresscard_paragraph_content,
+                 }%}
+		{% endfor %}
+	</div>
+</section>

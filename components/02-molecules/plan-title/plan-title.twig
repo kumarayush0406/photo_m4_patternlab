@@ -1,0 +1,17 @@
+{% set btn_link_base_class = btn_link_base_class|default('btn') %}
+
+<div class="plans__titles ">
+	<div class="plans__yearly plansactive">
+		{% include "@atoms/links/link/cta-with-link/cta-with-link.twig" with {
+                    btn_content:plan_btn_content,
+                    btn_link_base_class: btn
+                    } %}
+		{# <a href="#" class="btn active">Yearly (save $40)</a> #}
+	</div>
+	<div class="plans__monthly">
+		{% include "@atoms/links/link/cta-with-link/cta-with-link.twig" with {
+                    btn_content:planB_btn_content,
+                    } %}
+		{# <a href="#" class="btn">Monthly</a> #}
+	</div>
+</div>

@@ -1,0 +1,26 @@
+{% set banner_base_class = 'banner' %}
+
+<section {{ bem(banner_base_class) }}>
+	<div {{bem('overlay','',banner_base_class)}}></div>
+	<div class="container">
+		<div {{bem('text','',banner_base_class)}}>
+			{% include '@atoms/text/headings/_heading.twig' with {
+    heading_level:3 ,
+    heading: banner_heading,
+  } %}
+			{% include '@atoms/text/headings/_heading.twig' with {
+    heading_level: 1,
+    heading: banner_heading_secondary,
+  } %}
+			{% include '@atoms/text/text/01-paragraph.twig' with {
+    paragraph_content:banner__paragraph_content,
+  } %}
+  <div {{bem('cta','',banner_base_class)}}>
+			{% include '@atoms/links/link/cta-with-link/cta-with-link.twig' with {
+    btn_content: banner__btn_content,
+    btn_link_modifiers: banner__btn_link_modifiers,
+  } %}
+  </div>
+		</div>
+	</div>
+</section>

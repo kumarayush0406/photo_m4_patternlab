@@ -1,0 +1,13 @@
+<section class="collage">
+	<div class="container-fluid">
+		<div class="collage__wrapper">
+			{% for item in items %}
+				{% include "@molecules\collage-card\collage-card.twig" with {
+    image_src:item.image_src,
+    heading_level:4 ,
+    collagecard_heading: item.collage_heading,  
+}%}
+			{% endfor %}
+		</div>
+	</div>
+</section>
